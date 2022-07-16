@@ -1,11 +1,13 @@
-# CLI tool for finding a local movie and playing it (on VLC)
+# CLI tool for finding a movie and playing it (in VLC)
+It's expected that you store your local movies under the `XDG_VIDEOS_DIR` (e.g. ~/Videos on Linux).  
+Storing a movie in a child directory is not a problem due to the fact that the tool utilizes recursive searching.
 ### Works only on Linux/GNU and UNIX platforms
 Installing the program (make sure you have rust installed - cargo):
 ```bash
 ./install.sh  # run the script in the root directory of the project
 ```
 
-Running the program:
+Running the program (make sure you have vlc installed or modify the command to suit your needs #Line50:main.rs):
 ```bash
 find-movie-cli-tool -m "Your Movie Here" # do not forget "" when passing the movie as an argument
 ```
